@@ -1,4 +1,9 @@
 # Appendix 1 -- tags in xml
+## XML Processing Instruction
+An SGML processing instruction is enclosed within `<?` and `>`.
+
+An XML processing instruction is enclosed within `<?` and `?>`.
+
 ## xml declaration 
 To declares it is an xml file, place `<?xml ?>` at beginning of xml file.
 
@@ -8,6 +13,12 @@ Additionally, with `<?xml ?>` at beginning of xml file, you can know
   - version info
   - encoding declaration
   - standalone or not
+
+> [!IMPORTANT]
+> Observe the format, we can unstrictly say that xml declaration is a special case of XML Processing Instruction
+>
+> although technically, strictly said it is not.
+
 
 For more details, see the XML docs -- [Extensible Markup Language (XML) 1.0 (Fifth Edition)](https://www.w3.org/TR/REC-xml/#NT-S)
 
