@@ -71,6 +71,29 @@ In the above example, we can know that
 | `PartName` | | | specifies the package part uri. | | |
 | `ContentType`| | content type | specifies the content type. | | |
 
+### examples
+#### example 1
+
+`test1.xml` file.
+
+```
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default Extension="xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>
+  <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
+  <Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/>
+  <Override PartName="/word/numbering.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml"/>
+  <Override PartName="/word/settings.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"/>
+  <Override PartName="/word/fontTable.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml"/>
+  <Override PartName="/word/theme/theme1.xml" ContentType="application/vnd.openxmlformats-officedocument.theme+xml"/>
+  <Override PartName="/word/webSettings.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml"/>
+</Types>
+```
+
+In above exampl, we can know that
+
++ In `<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">`, the xmlns's content type targst to `http://schemas.openxmlformats.org/package/2006/content-types`.
++ In  `<Default Extension="xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>`, it configures xml extension, whose content type is `application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml`.
++ In `<Override PartName="/word/settings.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"/>`, it overrides the deault setting, content type of `~/word/settings.xml` file under Word file is `application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml`.
 ## reference
 ### related question
 On stackoverflow, 
