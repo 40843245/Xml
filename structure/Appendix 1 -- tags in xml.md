@@ -50,6 +50,27 @@ In the above example, we can know that
 + XML preprocessor version 1.0 will encode the text in `test1.xml` file with encoding `UTF-8`.
 + `test1.xml` is standalone.
 
+#### tag and its attribute in xml
+#### tag in xml
+| xml tag | meaning | description | notes | notice |
+| :---------- | :----------- | :----- | :--- | :-- |
+| `<Types>` | | | acts like a container that defines the content types. | | |
+| `<Default>` | | | specifies the default setting of this file. | | |
+| `<Override>` | | | overrides the default setting.
+
+#### attribute in xml
+##### attribute in `<Default>`
+| attribute tag | meaning | description | notes | notice |
+| :---------- | :----------- | :----- | :--- | :-- |
+| `Extension` | | | specifies the extension will be used. | | |
+| `ContentType`| | content type | specifies the content type. | | |
+
+##### attribute in `<Override>`
+| attribute tag | meaning | description | notes | notice |
+| :---------- | :----------- | :----- | :--- | :-- |
+| `PartName` | | | specifies the package part uri. | | |
+| `ContentType`| | content type | specifies the content type. | | |
+
 ## reference
 ### related question
 On stackoverflow, 
