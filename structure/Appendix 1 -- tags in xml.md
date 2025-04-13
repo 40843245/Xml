@@ -89,11 +89,12 @@ In the above example, we can know that
 </Types>
 ```
 
-In above exampl, we can know that
+In above example, we can know that
 
 + In `<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">`, the xmlns's content type targst to `http://schemas.openxmlformats.org/package/2006/content-types`.
 + In  `<Default Extension="xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>`, it configures xml extension, whose content type is `application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml`.
 + In `<Override PartName="/word/settings.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"/>`, it overrides the deault setting, content type of `~/word/settings.xml` file under Word file is `application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml`.
+
 ## reference
 ### related question
 On stackoverflow, 
@@ -101,5 +102,12 @@ On stackoverflow,
 + [What is on the first line of an XML document?](https://stackoverflow.com/questions/35835870/what-is-on-the-first-line-of-an-xml-document)
 + [How to remove standalone attribute declaration in xml document?](https://stackoverflow.com/questions/8438105/how-to-remove-standalone-attribute-declaration-in-xml-document#:~:text=If%20there%20are%20external%20markup%20declarations%20but%20there,document%20declaration%2C%20the%20value%20%22no%22%20is%20assumed.%22%20w3.org%2FTR%2FREC-xml%2F%23sec-rmd)
 + [How default is the default encoding (UTF-8) in the XML Declaration?](https://stackoverflow.com/questions/16361909/how-default-is-the-default-encoding-utf-8-in-the-xml-declaration)
+
 ### official docs
-XML docs -- [Extensible Markup Language (XML) 1.0 (Fifth Edition)](https://www.w3.org/TR/REC-xml/#NT-S)
+XML docs:
+
++ [Extensible Markup Language (XML) 1.0 (Fifth Edition)](https://www.w3.org/TR/REC-xml/#NT-S)
+
+OOXML docs:
+
++ [OOXML](https://ooxml.info/docs)
